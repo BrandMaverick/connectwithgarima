@@ -2,7 +2,7 @@ import OpenAI from "openai";
 
 // the newest OpenAI model is "gpt-4o" which was released May 13, 2024. do not change this unless explicitly requested by the user
 const openai = new OpenAI({ 
-  apiKey: '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'
+  apiKey: 'blah'
 });
 
 export interface PropertyValuationData {
