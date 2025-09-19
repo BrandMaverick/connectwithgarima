@@ -4,8 +4,13 @@ import { storage } from "./storage";
 import { aiService } from "./ai-service";
 import { insertInquirySchema, insertHomeValuationSchema } from "@shared/schema";
 import { z } from "zod";
+import { email } from './emailservice';
+import cors from 'cors';
 
 export async function registerRoutes(app: Express): Promise<Server> {
+
+  app.use(cors());
+  
   // Properties
   app.get("/api/properties", async (req, res) => {
     try {
@@ -114,6 +119,9 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const validatedData = insertInquirySchema.parse(req.body);
       const inquiry = await storage.createInquiry(validatedData);
+
+      await email.sendInquiryEmailNotification(validatedData);
+
       res.status(201).json(inquiry);
     } catch (error) {
       if (error instanceof z.ZodError) {
