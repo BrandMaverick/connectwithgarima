@@ -4,7 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
-import { Phone, Mail, MapPin, Send, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { SiLinkedin, SiFacebook, SiInstagram, SiYoutube } from "react-icons/si";
 import { useMutation } from "@tanstack/react-query";
 import { useToast } from "@/hooks/use-toast";
 import { insertInquirySchema, Inquiry } from "@shared/schema";
@@ -89,8 +90,8 @@ export default function ContactSection() {
                 <Phone className="text-luxury-gold text-xl mr-4 h-6 w-6" />
                 <div>
                   <p className="font-medium">Phone</p>
-                  <a href="tel:+12065551234" className="text-gray-300 hover:text-white transition-colors">
-                    (206) 555-1234
+                  <a href="tel:+14253736401" className="text-gray-300 hover:text-white transition-colors">
+                    (425) 373-6401
                   </a>
                 </div>
               </div>
@@ -98,8 +99,8 @@ export default function ContactSection() {
                 <Mail className="text-luxury-gold text-xl mr-4 h-6 w-6" />
                 <div>
                   <p className="font-medium">Email</p>
-                  <a href="mailto:garima@luxuryseattle.com" className="text-gray-300 hover:text-white transition-colors">
-                    garima@luxuryseattle.com
+                  <a href="mailto:connectwithgarima@gmail.com" className="text-gray-300 hover:text-white transition-colors">
+                    connectwithgarimagarima@gmail.com
                   </a>
                 </div>
               </div>
@@ -115,17 +116,17 @@ export default function ContactSection() {
             <div className="mt-8">
               <h4 className="text-lg font-semibold mb-4">Follow Garima</h4>
               <div className="flex space-x-4">
-                <a href="#" className="bg-gray-700 p-3 rounded-full hover:bg-luxury-gold transition-colors">
-                  <Facebook className="text-white h-5 w-5" />
+                <a href="https://www.facebook.com/bansalgarima" className="bg-gray-700 p-3 rounded-full hover:bg-luxury-gold transition-colors" target="_blank" rel="noopener noreferrer">
+                  <SiFacebook className="text-white h-5 w-5" />
                 </a>
-                <a href="#" className="bg-gray-700 p-3 rounded-full hover:bg-luxury-gold transition-colors">
-                  <Instagram className="text-white h-5 w-5" />
+                <a href="#" className="bg-gray-700 p-3 rounded-full hover:bg-luxury-gold transition-colors" target="_blank" rel="noopener noreferrer">
+                  <SiInstagram className="text-white h-5 w-5" />
                 </a>
-                <a href="#" className="bg-gray-700 p-3 rounded-full hover:bg-luxury-gold transition-colors">
-                  <Linkedin className="text-white h-5 w-5" />
+                <a href="https://www.linkedin.com/in/garimabansal/" className="bg-gray-700 p-3 rounded-full hover:bg-luxury-gold transition-colors" target="_blank" rel="noopener noreferrer">
+                  <SiLinkedin className="text-white h-5 w-5" />
                 </a>
-                <a href="#" className="bg-gray-700 p-3 rounded-full hover:bg-luxury-gold transition-colors">
-                  <Youtube className="text-white h-5 w-5" />
+                <a href="#" className="bg-gray-700 p-3 rounded-full hover:bg-luxury-gold transition-colors" target="_blank" rel="noopener noreferrer">
+                  <SiYoutube className="text-white h-5 w-5" />
                 </a>
               </div>
             </div>

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Play, Award } from "lucide-react";
+import agentImage from "@/assets/images/Garima.jpg";
 
 export default function AboutAgent() {
   const scrollToContact = () => {
@@ -15,7 +16,7 @@ export default function AboutAgent() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <img
-              src="https://images.unsplash.com/photo-1580894908361-967195033215?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src={agentImage}
               alt="Garima Bansal - Luxury Real Estate Agent"
               className="rounded-2xl shadow-2xl w-full h-auto"
             />
