@@ -1,15 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Play, Award } from "lucide-react";
 import agentImage from "@/assets/images/Garima.jpg";
+import { scrollToContact } from "@/lib/utils";
 
 export default function AboutAgent() {
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

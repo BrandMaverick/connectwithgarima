@@ -11,6 +11,7 @@ import BlogResources from "@/components/blog-resources";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
 import AIChat from "@/components/ai-chat";
+import OpenHouses from "@/components/open-houses";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <HeroSection />
       {/* <QuickSearch /> */}
       <AboutAgent />
+      <OpenHouses />
       {/* <FeaturedListings /> */}
       <SeniorDownsizing />
       {/* <AIHomeValuation /> */}

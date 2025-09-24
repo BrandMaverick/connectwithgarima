@@ -102,6 +102,16 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // Open Houses
+  app.get("/api/open-houses", async (req, res) => {
+    try {
+      const houses = await storage.getOpenHouses();
+      res.json(houses);
+    } catch (error) {
+      res.status(500).json({ message: "Failed to fetch open houses" });
+    }
+  });
+
   app.get("/api/neighborhoods/:id", async (req, res) => {
     try {
       const neighborhood = await storage.getNeighborhood(req.params.id);

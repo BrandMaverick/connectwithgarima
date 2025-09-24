@@ -1,4 +1,4 @@
-import { type User, type InsertUser, type Property, type InsertProperty, type Testimonial, type InsertTestimonial, type BlogPost, type InsertBlogPost, type Inquiry, type InsertInquiry, type HomeValuation, type InsertHomeValuation, type Neighborhood, type InsertNeighborhood } from "@shared/schema";
+import { type User, type InsertUser, type Property, type InsertProperty, type Testimonial, type InsertTestimonial, type BlogPost, type InsertBlogPost, type Inquiry, type InsertInquiry, type HomeValuation, type InsertHomeValuation, type Neighborhood, type InsertNeighborhood, type House, type InsertOpenHouse} from "@shared/schema";
 import { randomUUID } from "crypto";
 
 export interface IStorage {
@@ -38,6 +38,8 @@ export interface IStorage {
   getNeighborhoods(): Promise<Neighborhood[]>;
   getNeighborhood(id: string): Promise<Neighborhood | undefined>;
   createNeighborhood(neighborhood: InsertNeighborhood): Promise<Neighborhood>;
+
+  createOpenHouse(house: InsertOpenHouse): Promise<House>;
 }
 
 export class MemStorage implements IStorage {
@@ -48,6 +50,7 @@ export class MemStorage implements IStorage {
   private inquiries: Map<string, Inquiry> = new Map();
   private homeValuations: Map<string, HomeValuation> = new Map();
   private neighborhoods: Map<string, Neighborhood> = new Map();
+  private houses: Map<string, House> = new Map();
 
   constructor() {
     this.seedData();
@@ -234,6 +237,21 @@ export class MemStorage implements IStorage {
       const id = randomUUID();
       this.neighborhoods.set(id, { ...neighborhood, id });
     });
+
+    // Seed Open Houses
+    const houseData: Omit<House, 'id'>[] = [
+      {
+        image: "OpenHouse_Flyer_1.jpg",
+      },
+      {
+        image: "OpenHouse_Flyer_2.jpg",
+      }
+    ];
+
+    houseData.forEach(house => {
+      const id = randomUUID();
+      this.houses.set(id, { ...house, id });
+    });
   }
 
   // Users
@@ -414,6 +432,11 @@ export class MemStorage implements IStorage {
     return Array.from(this.neighborhoods.values());
   }
 
+  // Open Houses
+  async getOpenHouses(): Promise<House[]> {
+    return Array.from(this.houses.values());
+  }
+
   async getNeighborhood(id: string): Promise<Neighborhood | undefined> {
     return this.neighborhoods.get(id);
   }
@@ -430,6 +453,16 @@ export class MemStorage implements IStorage {
     };
     this.neighborhoods.set(id, neighborhood);
     return neighborhood;
+  }
+
+  async createOpenHouse(insertHouse: InsertOpenHouse): Promise<House> {
+    const id = randomUUID();
+    const house: House = { 
+      ...insertHouse,
+      id
+    };
+    this.houses.set(id, house);
+    return house;
   }
 }
 

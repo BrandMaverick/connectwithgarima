@@ -85,6 +85,11 @@ export const neighborhoods = pgTable("neighborhoods", {
   link: text("links").notNull(),
 });
 
+export const houses = pgTable("houses", {
+  id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
+  image: text("image").notNull(),
+});
+
 // Insert schemas
 export const insertUserSchema = createInsertSchema(users).omit({
   id: true,
@@ -120,6 +125,10 @@ export const insertNeighborhoodSchema = createInsertSchema(neighborhoods).omit({
   id: true,
 });
 
+export const insertOpenHouseSchema = createInsertSchema(houses).omit({
+  id: true,
+}); 
+
 // Select types
 export type User = typeof users.$inferSelect;
 export type Property = typeof properties.$inferSelect;
@@ -128,6 +137,7 @@ export type BlogPost = typeof blogPosts.$inferSelect;
 export type Inquiry = typeof inquiries.$inferSelect;
 export type HomeValuation = typeof homeValuations.$inferSelect;
 export type Neighborhood = typeof neighborhoods.$inferSelect;
+export type House = typeof houses.$inferSelect;
 
 // Insert types
 export type InsertUser = z.infer<typeof insertUserSchema>;
@@ -137,3 +147,4 @@ export type InsertBlogPost = z.infer<typeof insertBlogPostSchema>;
 export type InsertInquiry = z.infer<typeof insertInquirySchema>;
 export type InsertHomeValuation = z.infer<typeof insertHomeValuationSchema>;
 export type InsertNeighborhood = z.infer<typeof insertNeighborhoodSchema>;
+export type InsertOpenHouse = z.infer<typeof insertOpenHouseSchema>;

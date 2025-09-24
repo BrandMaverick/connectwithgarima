@@ -1,14 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Heart, Users, GraduationCap, Calendar, Video } from "lucide-react";
+import { scrollToContact } from "@/lib/utils";
 
 export default function SeniorDownsizing() {
-  const scrollToContact = () => {
-    const element = document.getElementById('contact');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <section id="seniors" className="py-20 bg-luxury-navy text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
