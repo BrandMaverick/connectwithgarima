@@ -32,12 +32,12 @@ export default function Navigation() {
               >
                 About
               </button>
-              <button
+              {/* <button
                 onClick={() => scrollToSection('listings')}
                 className="text-gray-700 hover:text-luxury-navy font-medium transition-colors"
               >
                 Properties
-              </button>
+              </button> */}
               <button
                 onClick={() => scrollToSection('neighborhoods')}
                 className="text-gray-700 hover:text-luxury-navy font-medium transition-colors"
@@ -86,12 +86,12 @@ export default function Navigation() {
               >
                 About
               </button>
-              <button
+              {/* npm run <button
                 onClick={() => scrollToSection('listings')}
                 className="text-gray-700 hover:text-luxury-navy font-medium transition-colors text-left"
               >
                 Properties
-              </button>
+              </button> */}
               <button
                 onClick={() => scrollToSection('neighborhoods')}
                 className="text-gray-700 hover:text-luxury-navy font-medium transition-colors text-left"

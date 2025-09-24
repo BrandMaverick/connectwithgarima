@@ -108,7 +108,7 @@ export default function ContactSection() {
                 <MapPin className="text-luxury-gold text-xl mr-4 h-6 w-6" />
                 <div>
                   <p className="font-medium">Office</p>
-                  <p className="text-gray-300">123 Main Street, Bellevue, WA 98004</p>
+                  <p className="text-gray-300">11109 Slater Ave NE #200A, Kirkland, WA 98033</p>
                 </div>
               </div>
             </div>

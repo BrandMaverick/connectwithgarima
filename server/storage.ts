@@ -152,25 +152,28 @@ export class MemStorage implements IStorage {
     // Seed blog posts
     const blogData: Omit<BlogPost, 'id' | 'publishedAt'>[] = [
       {
-        title: "2024 Seattle Luxury Market: Year-End Analysis",
-        excerpt: "Comprehensive review of luxury property sales in Greater Seattle, including market predictions for 2025 and investment opportunities.",
-        content: "The Seattle luxury real estate market continues to show resilience...",
+        title: "2025  Luxury Market Report",
+        excerpt: "Although buyers remained highly engaged in August, approaching the market with more intentionality, it is now sellers that appeared to be more restrained, limiting the flow of new inventory and slowing the pace of overall supply.",
+        content: " The North American luxury real estate market in 2025...",
         category: "Market Trends",
-        image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        image: "LuxuryMarketReport.jpg",
+        link: "https://www.luxuryhomemarketing.com/assets/LMR_NorthAmerica.pdf"
       },
       {
         title: "The Complete Guide to Downsizing After 65",
         excerpt: "Essential tips and emotional guidance for seniors transitioning to their next home, including financial considerations and timing strategies.",
-        content: "Downsizing can be an emotional journey for seniors...",
+        content: "The United States Census Bureau estimates that the average individual will move 11.7 times throughout their lifetime....",
         category: "Senior Services",
-        image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        image: "Downsizingtips-blog.jpg",
+        link: "https://todayshomeowner.com/moving/guides/complete-guide-to-downsizing-for-seniors/"
       },
       {
-        title: "How AI is Revolutionizing Real Estate Valuations",
+        title: "How Artificial Intelligence Is Changing The Real Estate Market",
         excerpt: "Discover how artificial intelligence provides more accurate home valuations and market insights for both buyers and sellers in today's market.",
         content: "Artificial intelligence is transforming how we value properties...",
         category: "Technology",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        link: "https://www.forbes.com/councils/forbestechcouncil/2024/10/30/how-artificial-intelligence-is-changing-the-real-estate-market/"
       }
     ];
 
@@ -188,38 +191,42 @@ export class MemStorage implements IStorage {
       {
         name: "Bellevue",
         description: "Upscale suburban living with world-class shopping and dining",
-        image: "https://images.unsplash.com/photo-1541690485441-6d0d2468a94b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "Bellevue.jpg",
         highlights: ["Bellevue Square", "Top-rated schools", "Tech corridor"],
         schools: { rating: 9.5, notable: ["Bellevue High School", "Newport High School"] },
         amenities: { shopping: "Bellevue Square", parks: "Bellevue Downtown Park" },
-        marketTrends: { medianPrice: "$1,850,000", appreciation: "8.2%" }
+        marketTrends: { medianPrice: "$1,850,000", appreciation: "8.2%" },
+        link: "https://bellevuewa.gov/resident-resources/newcomers-guide"
       },
       {
         name: "Redmond",
         description: "Tech hub with excellent schools and family amenities",
-        image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "Redmond.jpeg",
         highlights: ["Microsoft Campus", "Marymoor Park", "Family-friendly"],
         schools: { rating: 9.7, notable: ["Redmond High School", "Eastlake High School"] },
         amenities: { recreation: "Marymoor Park", shopping: "Redmond Town Center" },
-        marketTrends: { medianPrice: "$1,650,000", appreciation: "7.8%" }
+        marketTrends: { medianPrice: "$1,650,000", appreciation: "7.8%" },
+        link: "https://experienceredmond.com/"
       },
       {
         name: "Seattle",
         description: "Urban sophistication with cultural richness",
-        image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "Seattle.jpeg",
         highlights: ["Space Needle", "Pike Place Market", "Waterfront"],
         schools: { rating: 8.5, notable: ["Roosevelt High School", "Garfield High School"] },
         amenities: { culture: "Seattle Art Museum", dining: "Pike Place Market" },
-        marketTrends: { medianPrice: "$1,250,000", appreciation: "6.5%" }
+        marketTrends: { medianPrice: "$1,250,000", appreciation: "6.5%" },
+        link: "https://visitseattle.org/explore/visitor-information/ovg/"
       },
       {
-        name: "Spokane",
+        name: "Issaquah",
         description: "Affordable luxury with outdoor recreation",
-        image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        image: "Issaquah.jpeg",
         highlights: ["Riverfront Park", "Gonzaga University", "Outdoor recreation"],
         schools: { rating: 8.0, notable: ["Lewis and Clark High School"] },
         amenities: { recreation: "Riverfront Park", culture: "Northwest Museum" },
-        marketTrends: { medianPrice: "$485,000", appreciation: "12.3%" }
+        marketTrends: { medianPrice: "$485,000", appreciation: "12.3%" },
+        link: "https://www.issaquahwa.gov/8/Our-Residents"
       }
     ];
 

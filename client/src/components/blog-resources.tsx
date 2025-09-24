@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight, BookOpen } from "lucide-react";
 import { BlogPost } from "@shared/schema";
+import { getImageURL } from "@/lib/utils";
 
 export default function BlogResources() {
   const { data: posts, isLoading } = useQuery<BlogPost[]>({
@@ -67,7 +68,7 @@ export default function BlogResources() {
           {posts?.map((post) => (
             <article key={post.id} className="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <img
-                src={post.image || "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"}
+                src={getImageURL(post.image)}
                 alt={post.title}
                 className="w-full h-48 object-cover"
               />
@@ -84,7 +85,7 @@ export default function BlogResources() {
                 <p className="text-gray-600 mb-4">
                   {post.excerpt}
                 </p>
-                <button className="text-luxury-gold font-medium hover:text-yellow-600 transition-colors inline-flex items-center">
+                <button className="text-luxury-gold font-medium hover:text-yellow-600 transition-colors inline-flex items-center" onClick={() => window.open(post.link, '_blank')}>
                   Read More <ArrowRight className="ml-1 h-4 w-4" />
                 </button>
               </div>

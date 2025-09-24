@@ -17,13 +17,13 @@ export default function Home() {
     <div className="min-h-screen bg-luxury-cream">
       <Navigation />
       <HeroSection />
-      <QuickSearch />
+      {/* <QuickSearch /> */}
       <AboutAgent />
-      <FeaturedListings />
+      {/* <FeaturedListings /> */}
       <SeniorDownsizing />
-      <AIHomeValuation />
+      {/* <AIHomeValuation /> */}
       <NeighborhoodGuides />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <BlogResources />
       <ContactSection />
       <Footer />

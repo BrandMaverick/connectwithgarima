@@ -21,9 +21,9 @@ export default function AboutAgent() {
               className="rounded-2xl shadow-2xl w-full h-auto"
             />
             
-            <div className="mt-8 grid grid-cols-3 gap-6 text-center">
+            {/* <div className="mt-8 grid grid-cols-3 gap-6 text-center">
               <div className="bg-luxury-cream p-4 rounded-lg">
-                <h3 className="text-2xl font-bold text-luxury-navy">15+</h3>
+                <h3 className="text-2xl font-bold text-luxury-navy">20+</h3>
                 <p className="text-sm text-gray-600 font-medium">Years Experience</p>
               </div>
               <div className="bg-luxury-cream p-4 rounded-lg">
@@ -33,8 +33,8 @@ export default function AboutAgent() {
               <div className="bg-luxury-cream p-4 rounded-lg">
                 <h3 className="text-2xl font-bold text-luxury-navy">5★</h3>
                 <p className="text-sm text-gray-600 font-medium">Client Rating</p>
-              </div>
-            </div>
+              </div> 
+            </div>*/ }
           </div>
           
           <div>
@@ -42,10 +42,10 @@ export default function AboutAgent() {
               Meet Garima Bansal
             </h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              With over 15 years of experience in luxury real estate across the Greater Seattle area, Garima Bansal has established herself as the premier agent for discerning clients seeking exceptional properties and personalized service.
+              With over 20 years of experience in luxury real estate across the Puget Sound area, Garima Bansal has established herself as the premier agent for discerning clients seeking exceptional properties and personalized service.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Born and raised in the Pacific Northwest, Garima possesses an intimate knowledge of Seattle's most prestigious neighborhoods. Her unique expertise in helping senior homeowners navigate the downsizing process with compassion and care sets her apart in the industry.
+              Garima possesses an intimate knowledge of Seattle's most prestigious neighborhoods. Her unique expertise in helping senior homeowners navigate the downsizing process with compassion and care sets her apart in the industry.
             </p>
             
             <div className="mb-8">
@@ -78,13 +78,13 @@ export default function AboutAgent() {
                 <Calendar className="mr-2 h-4 w-4" />
                 Schedule Meeting
               </Button>
-              <Button
+              {/* <Button
                 variant="outline"
                 className="border-2 border-luxury-navy text-luxury-navy hover:bg-luxury-navy hover:text-white transition-colors"
               >
                 <Play className="mr-2 h-4 w-4" />
                 Watch Video Bio
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>

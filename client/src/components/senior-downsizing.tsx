@@ -53,13 +53,13 @@ export default function SeniorDownsizing() {
                 <Calendar className="mr-2 h-4 w-4" />
                 Request Consultation
               </Button>
-              <Button
+              {/* <Button
                 variant="outline"
                 className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-luxury-navy transition-colors"
               >
                 <Video className="mr-2 h-4 w-4" />
                 Join Our Webinar
-              </Button>
+              </Button> */}
             </div>
           </div>
           

@@ -46,6 +46,7 @@ export const blogPosts = pgTable("blog_posts", {
   category: text("category").notNull(),
   image: text("image"),
   publishedAt: timestamp("published_at").notNull().default(sql`now()`),
+  link: text("links").notNull(),
 });
 
 export const inquiries = pgTable("inquiries", {
@@ -81,6 +82,7 @@ export const neighborhoods = pgTable("neighborhoods", {
   schools: json("schools"),
   amenities: json("amenities"),
   marketTrends: json("market_trends"),
+  link: text("links").notNull(),
 });
 
 // Insert schemas

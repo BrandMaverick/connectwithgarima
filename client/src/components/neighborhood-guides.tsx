@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { ArrowRight } from "lucide-react";
 import { Neighborhood } from "@shared/schema";
+import { getImageURL } from "@/lib/utils";
 
 export default function NeighborhoodGuides() {
   const { data: neighborhoods, isLoading } = useQuery<Neighborhood[]>({
@@ -55,7 +56,7 @@ export default function NeighborhoodGuides() {
             <div key={neighborhood.id} className="group cursor-pointer">
               <div className="relative overflow-hidden rounded-xl shadow-lg group-hover:shadow-2xl transition-shadow duration-300">
                 <img
-                  src={neighborhood.image}
+                  src={getImageURL(neighborhood.image)}
                   alt={`${neighborhood.name} Neighborhood`}
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -63,9 +64,9 @@ export default function NeighborhoodGuides() {
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <h3 className="text-2xl font-semibold mb-2">{neighborhood.name}</h3>
                   <p className="text-sm text-gray-200 mb-3">{neighborhood.description}</p>
-                  <span className="inline-flex items-center text-luxury-gold font-medium">
+                  <button className="inline-flex items-center text-luxury-gold font-medium" onClick={() => window.open(neighborhood.link, '_blank')}>
                     Explore Guide <ArrowRight className="ml-2 h-4 w-4" />
-                  </span>
+                  </button>
                 </div>
               </div>
             </div>
