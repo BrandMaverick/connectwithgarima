@@ -241,6 +241,12 @@ export class MemStorage implements IStorage {
     // Seed Open Houses
     const houseData: Omit<House, 'id'>[] = [
       {
+        image: "OpenHouse_Flyer_10_4_2025.jpg",
+      },
+      {
+        image: "OpenHouse_Flyer_10_5_2025.jpg",
+      },
+      {
         image: "OpenHouse_Flyer_1.jpg",
       },
       {
