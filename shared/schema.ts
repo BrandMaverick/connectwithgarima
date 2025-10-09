@@ -88,6 +88,8 @@ export const neighborhoods = pgTable("neighborhoods", {
 export const houses = pgTable("houses", {
   id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
   image: text("image").notNull(),
+  date: text("date").notNull(),
+  address: text("address").notNull(),
 });
 
 // Insert schemas

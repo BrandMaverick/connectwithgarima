@@ -241,16 +241,34 @@ export class MemStorage implements IStorage {
     // Seed Open Houses
     const houseData: Omit<House, 'id'>[] = [
       {
-        image: "OpenHouse_Flyer_10_4_2025.jpg",
+        image: "OpenHouse_Flyer_10_11_2025.jpg",
+        date: "10/11/2025",
+        address: "9355 Sunset way, Bellevue, WA 98004",      
+      },
+      {
+        image: "OpenHouse_Flyer_10_10_2025.jpg",
+        date: "10/10/2025",
+        address: "16704 NE 97th Street, Redmond",         
       },
       {
         image: "OpenHouse_Flyer_10_5_2025.jpg",
+        date: "10/5/2025",
+        address: "9942 SE 39th Mercer Island",        
+      },
+      {
+        image: "OpenHouse_Flyer_10_4_2025.jpg",
+        date: "10/4/2025",
+        address: "3831 W Lake Sammamish Pkwy NE, Redmond",
       },
       {
         image: "OpenHouse_Flyer_1.jpg",
+        date: "9/28/2025",
+        address: "13550 127th Ave NE, Kirkland, WA 98034",
       },
       {
         image: "OpenHouse_Flyer_2.jpg",
+        date: "9/27/2025",
+        address: "12405 NE 112th St, Kirkland, WA",
       }
     ];
 
