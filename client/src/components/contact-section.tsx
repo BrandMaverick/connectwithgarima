@@ -100,7 +100,7 @@ export default function ContactSection() {
                 <div>
                   <p className="font-medium">Email</p>
                   <a href="mailto:connectwithgarima@gmail.com" className="text-gray-300 hover:text-white transition-colors">
-                    connectwithgarimagarima@gmail.com
+                    connectwithgarima@gmail.com
                   </a>
                 </div>
               </div>
