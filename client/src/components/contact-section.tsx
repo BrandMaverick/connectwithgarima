@@ -78,7 +78,7 @@ export default function ContactSection() {
             Ready to Make Your Move?
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Whether you're buying, selling, or downsizing, Garima is here to guide you through every step with expertise and care.
+            Whether you're buying, selling, or downsizing, Garima is here to guide you through every step with Redfin-backed tools, expertise, and care.
           </p>
         </div>
         
@@ -108,7 +108,7 @@ export default function ContactSection() {
                 <MapPin className="text-luxury-gold text-xl mr-4 h-6 w-6" />
                 <div>
                   <p className="font-medium">Office</p>
-                  <p className="text-gray-300">11109 Slater Ave NE #200A, Kirkland, WA 98033</p>
+                  <p className="text-gray-300">Redfin Seattle Office, 1099 Stewart St, Suite 600, Seattle, WA 98101</p>
                 </div>
               </div>
             </div>

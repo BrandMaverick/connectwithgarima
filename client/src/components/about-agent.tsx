@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, Play, Award } from "lucide-react";
+import { Calendar, Award } from "lucide-react";
 import agentImage from "@/assets/images/Garima.jpg";
 import { scrollToContact } from "@/lib/utils";
 
@@ -32,14 +32,20 @@ export default function AboutAgent() {
           </div>
           
           <div>
+            <div className="inline-flex items-center rounded-full bg-red-50 px-4 py-2 text-sm font-semibold text-red-700 mb-5">
+              Redfin Agent serving Puget Sound
+            </div>
             <h2 className="text-4xl lg:text-5xl font-luxury font-bold text-luxury-navy mb-6">
               Meet Garima Bansal
             </h2>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              With over 20 years of experience in luxury real estate across the Puget Sound area, Garima Bansal has established herself as the premier agent for discerning clients seeking exceptional properties and personalized service.
+              Garima Bansal is now a Redfin agent, bringing clients the advantage of Redfin's modern real estate platform alongside her trusted, hands-on service across the Puget Sound area.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Garima possesses an intimate knowledge of Seattle's most prestigious neighborhoods. Her unique expertise in helping senior homeowners navigate the downsizing process with compassion and care sets her apart in the industry.
+              Garima possesses an intimate knowledge of Seattle's most prestigious neighborhoods. Her expertise in helping senior homeowners navigate the downsizing process with compassion and care continues to set her apart in the industry.
+            </p>
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              Whether you are comparing homes, preparing to list, or planning a major life transition, Garima combines local insight, responsive communication, and Redfin-backed tools to make each step clearer.
             </p>
             
             <div className="mb-8">
@@ -47,7 +53,7 @@ export default function AboutAgent() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex items-center">
                   <Award className="text-luxury-gold mr-2 h-5 w-5" />
-                  <span className="text-gray-700">Certified Realtor®</span>
+                  <span className="text-gray-700">Redfin Agent</span>
                 </div>
                 <div className="flex items-center">
                   <Award className="text-luxury-gold mr-2 h-5 w-5" />

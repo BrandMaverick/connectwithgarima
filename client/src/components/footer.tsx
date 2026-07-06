@@ -7,10 +7,11 @@ export default function Footer() {
           <div>
             <h3 className="text-2xl font-luxury font-bold mb-4">Garima Bansal</h3>
             <p className="text-gray-400 mb-4">
-              Creating lasting legacies through exceptional real estate service in Puget Sound.
+              Redfin agent creating lasting legacies through exceptional real estate service in Puget Sound.
             </p>
             <div className="text-sm text-gray-400">
               <p>License #154826</p>
+              <p>Redfin Agent</p>
               <p>NWMLS Member</p>
             </div>
           </div>

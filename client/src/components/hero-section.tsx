@@ -20,7 +20,7 @@ export default function HeroSection() {
             Your Gateway to <span className="text-luxury-gold">Luxury Living</span> in Puget Sound
           </h1>
           <p className="text-xl lg:text-2xl mb-8 text-gray-200 font-light leading-relaxed">
-            Specializing in premium properties and compassionate downsizing services for discerning clients across Bellevue, Redmond, Issaquah, and Seattle.
+            As a Redfin agent, Garima pairs powerful market technology with personalized guidance for buyers, sellers, and downsizing clients across Bellevue, Redmond, Issaquah, and Seattle.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             {/* <Button

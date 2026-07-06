@@ -20,7 +20,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <h1 className="text-2xl font-luxury font-bold text-luxury-navy">Garima Bansal</h1>
-              <p className="text-sm text-luxury-gold font-medium">Luxury Real Estate Specialist</p>
+              <p className="text-sm text-luxury-gold font-medium">Redfin Agent | Luxury Real Estate Specialist</p>
             </div>
           </div>
           
