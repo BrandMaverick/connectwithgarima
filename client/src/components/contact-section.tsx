@@ -5,7 +5,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
-import { SiLinkedin, SiFacebook, SiInstagram, SiYoutube } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
+import { SiFacebook, SiInstagram, SiYoutube } from "react-icons/si";
 import { useMutation } from "@tanstack/react-query";
 import { useToast } from "@/hooks/use-toast";
 import { insertInquirySchema, Inquiry } from "@shared/schema";
@@ -123,7 +124,7 @@ export default function ContactSection() {
                   <SiInstagram className="text-white h-5 w-5" />
                 </a>
                 <a href="https://www.linkedin.com/in/garimabansal/" className="bg-gray-700 p-3 rounded-full hover:bg-luxury-gold transition-colors" target="_blank" rel="noopener noreferrer">
-                  <SiLinkedin className="text-white h-5 w-5" />
+                  <FaLinkedin className="text-white h-5 w-5" />
                 </a>
                 <a href="#" className="bg-gray-700 p-3 rounded-full hover:bg-luxury-gold transition-colors" target="_blank" rel="noopener noreferrer">
                   <SiYoutube className="text-white h-5 w-5" />
